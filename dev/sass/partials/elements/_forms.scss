@@ -1,0 +1,43 @@
+textarea {
+  resize: none;
+}
+
+form {
+	padding: 40px;
+	background-color: rgba(255, 255, 255, .5);
+}
+
+input {
+	height: 30px;
+}
+
+input,
+textarea {
+	background-color: transparent;
+	border: 1px solid #000;
+	display: block;
+	font-size: 16px;
+	margin: 20px 0 20px 0;
+	width: 80%;
+}
+
+label,
+button {
+	font-family: $font-family-contrast;
+	font-size: 20px;
+	font-weight: 400;
+}
+
+button {
+	background-color: $color-contrast;
+	border: none;
+	color: #fff;
+	cursor: pointer;
+	font-family: $font-family-base;
+	padding: 20px;
+	transition: background-color 1s; 
+	width: 30%;
+	&:hover {
+	background-color: $color-accent;			
+	}
+}

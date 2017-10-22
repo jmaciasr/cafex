@@ -1,0 +1,27 @@
+.menu {
+	font-family: $font-family-contrast;
+	padding: 30px;
+	position: absolute;
+	right: 0;	
+	text-align: right;	
+	
+	a {
+		border: none;
+		color: #fff;
+		font-size: 18px;
+		margin-left: 30px;
+		
+		&:hover {
+			border-bottom: 2px solid #fff;
+		}
+	}
+}
+
+.language {
+	display: block;
+	
+	a {
+		margin-left: 0;
+	}
+}
+

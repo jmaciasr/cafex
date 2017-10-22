@@ -1,0 +1,36 @@
+.btn {
+	border: none;
+	color: #fff;
+	cursor: pointer;
+	font-family: $font-family-base;
+	padding: 20px;
+	transition: background-color 1s; 
+	width: 30%;
+}
+
+.btn--principal {
+	background-color: $color-contrast;
+
+	&:hover {
+		background-color: $color-accent;			
+	}
+}
+
+//.btn--secundary {
+//    background-color:;
+
+//    &:hover {
+//        background-color:;
+//    }
+//}
+
+//.btn--small {
+    
+//}
+
+//.btn--invert {
+
+//    &:hover {
+       
+//    }
+//}

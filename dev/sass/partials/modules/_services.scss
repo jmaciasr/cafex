@@ -1,0 +1,80 @@
+.services {
+	margin-bottom: 120px;	
+}
+
+.service-left {
+	float: left;
+	width: 49%;
+}
+
+.service-right {
+	float: right;
+	width: 49%;
+}
+
+.service-element {
+	background-color: $color-gray;
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 40px;
+	
+	div {
+		background-size: cover;
+		repeat:  none;
+		width: 50%;
+		height: 300px;
+	}
+	
+	p {
+		padding: 40px;
+		width: 50%;
+	}
+}
+
+.service-1 {
+	background-image: url("../img/service1.jpg");
+}
+
+.service-2 {
+	background-image: url("../img/service2.jpg");
+}
+
+.service-3 {
+	background-image: url("../img/service3.jpg");
+}
+
+.service-4 {
+	background-image: url("../img/service4.jpg");
+}
+
+.service-5 {
+	background-image: url("../img/service5.jpg");
+}
+
+.service-6 {
+	background-image: url("../img/service6.jpg");
+}
+
+.service-7 {
+	background-image: url("../img/service7.jpg");
+}
+
+.service-8 {
+	background-image: url("../img/service8.jpg");
+}
+
+.service-9 {
+	background-image: url("../img/service9.jpg");
+}
+
+.service-10 {
+	background-image: url("../img/service10.jpg");
+}
+
+.service-11 {
+	background-image: url("../img/service11.jpg");
+}
+
+.service-12 {
+	background-image: url("../img/service12.jpg");
+}

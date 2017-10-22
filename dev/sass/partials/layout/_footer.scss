@@ -1,0 +1,23 @@
+footer {
+	//background-color: $color-base;
+	background-image: url("../img/footer-patter.jpg");
+	div {
+		padding: 10px 0 10px 0;
+	}
+	p {
+		color: #fff;
+		display: inline;
+		font-size: 18px;
+		margin: 0 60px 0 0;
+	}
+}
+
+.footer-logo {
+	margin: 0 60px 0 0;
+	width: 160px;
+}
+
+.footer-icon {
+	margin-right: 10px;
+	height: 30px;
+}

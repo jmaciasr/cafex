@@ -1,0 +1,24 @@
+.about {
+	margin-bottom: 120px;
+	
+	h2 {
+		display: inline;
+		margin-right: 30px;
+	}
+}
+
+.diplay-about_text	{
+	width: 50%;
+	padding-right: 30px;
+	float: left;
+}
+
+.diplay-about_photo	{
+
+	display: inline-block;
+	width: 50%;
+	
+	img {
+		width: 100%;
+	}
+}
