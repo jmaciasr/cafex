@@ -1,0 +1,30 @@
+.gallery-row {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	margin-bottom: 2%;
+	div {
+		background-color: red;
+	}
+}
+
+.height-img_base {
+		height: 160px;	
+}
+
+.height-img_large {
+		height: 320px;	
+}
+
+.wide-img_3-4 {
+	width: 74%;
+}
+
+.wide-img_1-4 {
+	width: 24%;
+}
+
+.wide-img_2-4 {
+	width: 49%;
+}
+
