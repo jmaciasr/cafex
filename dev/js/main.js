@@ -38,4 +38,3 @@ cafex.addEventListener("click", function(){
     displayPhoto.src = '../img/grid-history.jpg';
 
 });
-
