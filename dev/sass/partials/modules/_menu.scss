@@ -19,9 +19,16 @@
 
 .language {
 	display: block;
+	padding-bottom: 20px;
+	font-family: $font-family-base;
+
 	
 	a {
-		margin-left: 0;
+		margin-left: 0;		
+		&:hover {
+			border-bottom: 1px solid #fff;
+		}
+
 	}
 }
 
