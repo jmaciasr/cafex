@@ -3,17 +3,23 @@
 	flex-flow: row wrap;
 	justify-content: space-between;
 	margin-bottom: 2%;
+
 	div {
-		background-color: red;
+		background-color: #333;
+		overflow: hidden;
+	}
+	
+	img {
+		width: 100%;
 	}
 }
 
 .height-img_base {
-		height: 160px;	
+	height: 190px;	
 }
 
 .height-img_large {
-		height: 320px;	
+	height: 100%;	
 }
 
 .wide-img_3-4 {
@@ -28,8 +34,29 @@
 	width: 49%;
 }
 
-.img-1 {
-	background-image: url("../img/gallery/IMG_8106.jpg");
-		background-size: cover;
-	background-position: center;
+.gallery {
+
+	figure {
+		margin: 0;
+		position: relative;
+		opacity: 0;
+		transform: translateX(30px);
+		transition: all 0.4s ease-in-out;
+		overflow: hidden;
+	}
+
+	.is-showing {
+		opacity: 1;
+		transform: translateX(0px);
+	}
+
+	img {
+		display: block;
+		transform: scale(1);
+		transition: all 0.3s ease-in-out;
+
+		&:hover {
+		  	transform: scale(1.1);
+		}
+	}
 }

@@ -12,7 +12,6 @@ var prefix = require('gulp-autoprefixer');
 var connect = require('gulp-connect');
 var eyeglass = require("eyeglass");
 var imagemin = require('gulp-imagemin');
-// const del = require('del');
 
 var sassOptions = {
   outputStyle: 'expanded',

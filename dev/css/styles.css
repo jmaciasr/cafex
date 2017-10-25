@@ -108,7 +108,7 @@ button {
 }
 
 button:hover {
-  background-color: #9c764b;
+  background-color: #6a3c2c;
 }
 
 h1 {
@@ -383,6 +383,10 @@ footer p {
   z-index: 2;
 }
 
+.hidden {
+  display: none;
+}
+
 .btn {
   border: none;
   color: #fff;
@@ -399,7 +403,7 @@ footer p {
 }
 
 .btn--principal:hover {
-  background-color: #9c764b;
+  background-color: #6a3c2c;
 }
 
 .menu {
@@ -423,10 +427,16 @@ footer p {
 
 .language {
   display: block;
+  padding-bottom: 20px;
+  font-family: "Roboto", sans-serif;
 }
 
 .language a {
   margin-left: 0;
+}
+
+.language a:hover {
+  border-bottom: 1px solid #fff;
 }
 
 .about {
@@ -436,6 +446,13 @@ footer p {
 .about h2 {
   display: inline;
   margin-right: 30px;
+  cursor: pointer;
+  -webkit-transition: border .1s;
+  transition: border .1s;
+}
+
+.selected-display {
+  border-bottom: solid 4px #d36253;
 }
 
 .diplay-about_text {
@@ -450,6 +467,8 @@ footer p {
 }
 
 .diplay-about_photo img {
+  -webkit-transition: display 1s;
+  transition: display 1s;
   width: 100%;
 }
 
@@ -539,6 +558,10 @@ footer p {
   background-image: url("../img/service12.jpg");
 }
 
+.service-13 {
+  background-image: url("../img/service13.jpg");
+}
+
 .contact-bgi {
   background-image: url(../img/contact-bgi.jpg);
   background-size: cover;
@@ -596,6 +619,7 @@ footer p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 20px;
   padding: 40px;
 }
 
@@ -603,6 +627,88 @@ footer p {
   margin-top: 0;
 }
 
+.tesoros-info p {
+  margin-bottom: 40px;
+}
+
 .tesoros-logo img {
   padding-left: 20px;
+}
+
+.gps iframe {
+  height: 50%;
+  width: 100%;
+}
+
+.gallery-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 2%;
+}
+
+.gallery-row div {
+  background-color: #333;
+  overflow: hidden;
+}
+
+.gallery-row img {
+  width: 100%;
+}
+
+.height-img_base {
+  height: 190px;
+}
+
+.height-img_large {
+  height: 100%;
+}
+
+.wide-img_3-4 {
+  width: 74%;
+}
+
+.wide-img_1-4 {
+  width: 24%;
+}
+
+.wide-img_2-4 {
+  width: 49%;
+}
+
+.gallery figure {
+  margin: 0;
+  position: relative;
+  opacity: 0;
+  -webkit-transform: translateX(30px);
+          transform: translateX(30px);
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  overflow: hidden;
+}
+
+.gallery .is-showing {
+  opacity: 1;
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+}
+
+.gallery img {
+  display: block;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.gallery img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
