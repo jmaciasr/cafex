@@ -4,7 +4,13 @@
 	h2 {
 		display: inline;
 		margin-right: 30px;
+		cursor: pointer;
+		transition: border .1s; 
 	}
+}
+
+.selected-display {
+	border-bottom: solid 4px $color-contrast;
 }
 
 .diplay-about_text	{
@@ -19,6 +25,8 @@
 	width: 50%;
 	
 	img {
+		transition: display 1s; 
 		width: 100%;
 	}
 }
+

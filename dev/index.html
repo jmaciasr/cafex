@@ -15,7 +15,7 @@
   </script>
   <![endif]-->
   <meta name="description" content="">
-  <title>Servivios</title>
+  <title>Inicio</title>
 </head>
 <body>
   <header>
@@ -35,7 +35,7 @@
     	</nav>      
       <img class="header-logo" src="../img/logo-white.png" alt="">
     </div>
-    <img class="menu-photo" src="../img/menu-index.png" alt="imagen de selección de café">
+    <img class="menu-photo" src="../img/menu-index01.png" alt="imagen de selección de café">
   </header>
   <main> 
     <section class="about group">
@@ -44,15 +44,21 @@
       </h1>
       <div class="diplay-about">
         <div class="diplay-about_text">
-          <h2>Misión</h2>
-          <h2>Visión</h2>
-          <h2>Historia</h2>
-          <p>
+          <h2 class="selected-display" id="mision">Misión</h2>
+          <h2 id="vision">Visión</h2>
+          <h2 id="history">Historia</h2>
+          <p id="misionText">
             Somos una empresa enfocada a satisfacer a nuestros clientes. Buscamos soluciones que permitan ofrecer los máximos estándares de calidad en los servicios.
-          </p>          
+          </p> 
+          <p id="visionText" class="hidden">
+            Satisfacemos con pasión y entusiasmo las necesidades de nuestros clientes.
+          </p> 
+          <p id="historyText" class="hidden">
+            Es una plata de procesamiento de Café Oro, comenzó sus actividades en 1980, dándole ahora más de 30 años de presencia y experiencia en el mercado nacional de Costa Rica. Desde el inicio de nuestras actividades, nos hemos especializado en ofrecer servicios relacionados sólo con el café, implementando las mejores práccas en el proceso. Contamos con Certificación ISO FSC 22000.
+          </p>            
         </div>  
         <div class="diplay-about_photo">
-          <img src="../img/vision-grid.png" alt="imagen de referencia visión"> 
+          <img id="displayPhoto" src="../img/grid-mision.jpg" alt="imagen de referencia visión"> 
         </div>   
       </div>
     </section>   
@@ -62,7 +68,7 @@
     	<img class="footer-logo" src="../img/logo-white.png" alt="logo cafex version en blanco">
         <img class="footer-icon" src="../img/icon-phone.png" alt="icono de un celular">
         <p>
-          2222-2222
+          2250-2900
         </p>
             <img class="footer-icon" src="../img/icon-at.png" alt="icono de un celular">
         <p>
@@ -70,6 +76,7 @@
         </p>        
     </div>
   </footer>
+  <script src="js/main.js"></script>
 </body>
 </html>
 
