@@ -11,6 +11,8 @@ var sass = require('gulp-sass');
 var prefix = require('gulp-autoprefixer');
 var connect = require('gulp-connect');
 var eyeglass = require("eyeglass");
+var imagemin = require('gulp-imagemin');
+// const del = require('del');
 
 var sassOptions = {
   outputStyle: 'expanded',
@@ -71,7 +73,15 @@ gulp.task('connect', function() {
   });
 });
 
+gulp.task('images', function() {
+  //del.sync('./img')
+  return gulp.src('img/**/*.+(png|jpg|jpeg|gif|svg)')
+  .pipe(imagemin())
+  .pipe(gulp.dest('./img'))
+});
+
 //
 // Task declarations.
 //
 gulp.task('dev', ['styles', 'connect', 'watch']);
+gulp.task('prod', ['images'])
