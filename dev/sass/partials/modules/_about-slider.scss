@@ -1,21 +1,43 @@
-.about-slider {
-  animation-name: movement;
-  animation-duration: 18s;
-  animation-iteration-count: 1s;
-  animation-timing-function: ease-in-out;
-  animation-direction: alternate;
-  background-image: url("../img/menu-index.jpg");
-  background-position: 0 0;
-  background-repeat: no-repeat;
-  background-size: 301% auto;
-  height: 600px;
-}
+// .about-slider {
+//   animation-name: movement;
+//   animation-duration: 25s;
+//   animation-iteration-count: 1s;
+//   animation-timing-function: ease-in-out;
+//   animation-direction: alternate;
+//   background-image: url("../img/menu-index.jpg");
+//   background-position: 0 0;
+//   background-repeat: no-repeat;
+//   background-size: 301% auto;
+//   height: 600px;
+// }
 
-@keyframes movement {
-    0% {
-      background-position: 0;
-    }
-    100% {
-      background-position: 100%;
-    }
-}
+// @keyframes movement {
+//     0% {
+//       background-position: 0;
+//     }
+//     100% {
+//       background-position: 100%;
+//     }
+// }
+
+// .about-slider {
+//   animation-name: movement;
+//   animation-duration: 25s;
+//   animation-iteration-count: 1s;
+//   animation-timing-function: ease-in-out;
+//   animation-direction: alternate;
+// }
+
+// @keyframes movement {
+//     0% {
+//       right: : 0;
+//     }
+//     100% {
+//       right: : 50%;
+//     }
+// }
+// .about-slider img:nth-child(2) {
+//     position: absolute;
+//     right: -50%;
+//     top: 0;
+// }
