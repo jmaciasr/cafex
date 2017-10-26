@@ -27,7 +27,7 @@
         <div>
         <a href="index.html">Cafex</a>
         <a href="services.html">Servicios</a>
-        <a href="gallery.html">Galería</a>
+        <!--<a href="gallery.html">Galería</a>-->
         <a href="contact.html">Contacto</a>    
         </div>
     	</nav>
@@ -39,20 +39,20 @@
       </h1>
       <div class="contact-wrapper">
         <div class="contact-form">
-          <form action="">
-            <label for="">
+          <form action="send.php">
+            <label for="name">
               Nombre
             </label>
-            <input type="text">
-            <label for="">
+            <input id="name" type="text" name="name" required>
+            <label for="email">
               Correo
             </label>
-            <input type="text">
-            <label for="">
+            <input id="email" type="text" name="email" required>
+            <label for="message">
               Mensaje
             </label>
-            <textarea name="" id="" cols="30" rows="10" maxlength="250"></textarea> 
-            <button>
+            <textarea id="message" name="message" id="" cols="30" rows="10" maxlength="250 " required></textarea> 
+            <button type="submit">
               Enviar
             </button>                 
           </form>        
@@ -68,7 +68,7 @@
                 nuestro micro-benefico Los Tesoros
                 del Café.
               </p>
-              <a class="btn btn--principal" href="">
+              <a class="btn btn--principal" href="http://www.tesorosdelcafecr.com/">
                 Ir a Tesoros
               </a>
             </div>
@@ -85,7 +85,7 @@
   </main>
   <footer>
     <div class="group">
-    	<img class="footer-logo" src="../img/logo-white.png" alt="logo cafex version en blanco">
+    	<img class="footer-logo" src="../img/logo-footer.png" alt="logo cafex version en blanco">
         <img class="footer-icon" src="../img/icon-phone.png" alt="icono de un celular">
         <p>
           2250-2900
