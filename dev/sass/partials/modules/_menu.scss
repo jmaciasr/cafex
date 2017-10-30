@@ -1,6 +1,6 @@
 .menu {
 	font-family: $font-family-contrast;
-	padding: 30px;
+	padding: 10px 30px 20px 30px;
 	position: absolute;
 	right: 0;	
 	text-align: right;	
@@ -9,18 +9,24 @@
 	a {
 		border: none;
 		color: #fff;
-		font-size: 18px;
+		font-size: 25px;
 		margin-left: 30px;
+		transition: border .2s;
 		
 		&:hover {
 			border-bottom: 2px solid #fff;
+		}
+
+		@include query(1500px) {
+			font-size: 190%;
 		}
 	}
 }
 
 .language {
 	display: block;
-	padding-bottom: 20px;
+	font-size: 18x;
+	padding-bottom: 10px;
 	font-family: $font-family-base;
 
 	

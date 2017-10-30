@@ -24,7 +24,7 @@ vision.addEventListener("click", function(){
     mision.classList.remove('selected-display')
     cafex.classList.remove('selected-display')   
     vision.classList.add('selected-display');
-    displayPhoto.src = '../img/grid-vision.jpg';
+    displayPhoto.src = 'img/grid-vision.jpg';
 
 });
 
@@ -35,6 +35,6 @@ cafex.addEventListener("click", function(){
     mision.classList.remove('selected-display')
     vision.classList.remove('selected-display')   
     cafex.classList.add('selected-display');
-    displayPhoto.src = '../img/grid-history.jpg';
+    displayPhoto.src = 'img/grid-history.jpg';
 
 });

@@ -11,6 +11,15 @@
   @include micro-clearfix;
   margin: 0 auto;
   max-width: 1200px;
+  padding: 0 10px;
+  
+  @include query(600px) {
+    padding: 0 30px;
+  }   
+
+  @include query(960px) {
+    padding: 0 40px;
+  }     
 }
 
 .bg-hero {

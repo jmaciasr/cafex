@@ -9,7 +9,7 @@
 }
 
 .contact {
-	margin-bottom: 120px;
+	margin-bottom: 200px;
 
 	h1 {
 		color: #fff;
@@ -18,22 +18,37 @@
 }
 	
 .contact-wrapper{
-	display: flex;
+
+
+  @include query(1030px) {
+    display: flex;
 	justify-content: space-between;
+  } 
+
 }
 
 
 .contact-form {	
-	width: 48%;
-
+	width: 100%;
+	
 	form {
 		width: 100%;
 	}
+
+	@include query(1030px) {
+	width: 48%;
+  	} 
 }
 
 .contact-more-info {
 	@include micro-clearfix;
-	width: 48%;
+	width: 100%;
+	margin-top: 20px;
+
+	@include query(1030px) {
+		margin-top: 0;
+		width: 48%;
+  	} 
 }
 
 .tesoros {
@@ -56,8 +71,14 @@
 }
 
 .tesoros-logo {
+
 	img {
-		padding-left: 20px;
+		display: none;
+		
+		@include query(1025px) {
+			display: inline;
+			padding-left: 20px;
+		} 
 	}
 }
 

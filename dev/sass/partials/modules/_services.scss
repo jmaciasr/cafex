@@ -3,79 +3,154 @@
 }
 
 .service-left {
-	float: left;
-	width: 49%;
+
+	@include query(650px) {
+		float: left;
+		width: 49%;
+	} 	
 }
 
 .service-right {
-	float: right;
-	width: 49%;
+	
+	@include query(650px) {
+		float: right;
+		width: 49%;
+	} 	
 }
 
 .service-element {
+	background-size: cover;
 	display: flex;
 	flex-direction: row;
+	height: 300px;
 	margin-bottom: 40px;
-		height: 300px;
-		background-size: cover;
-		repeat:  none;
+	transform: scale(1);
+	transition: all 0.3s ease-in-out;
+	repeat:  none;
+
+	&:hover {
+		transform: scale(1.04);
+		//height: 320px;
+
+	}	
 	
 	h4 {
 		background-color: rgba(255, 255, 255, .7);
+		font-size: 130%;
 		margin: 50px 0;
-		padding: 40px;
-		width: 50%;
+		padding: 5%;
+		width: 75%;
+		
+		@include query(700px) {
+			font-size: 140%;
+		} 
+
+		@include query(1040px) {
+			font-size: 160%;
+		}
 	}
 }
 
 .service-1 {
 	background-image: url("../img/service1.jpg");
+
+	&:hover {
+		background-image: url("../img/service1b.jpg");
+	}
 }
 
 .service-2 {
 	background-image: url("../img/service2.jpg");
+
+	&:hover {
+		background-image: url("../img/service2b.jpg");
+	}	
 }
 
 .service-3 {
 	background-image: url("../img/service3.jpg");
+
+	&:hover {
+		background-image: url("../img/service3b.jpg");
+	}
 }
 
 .service-4 {
 	background-image: url("../img/service4.jpg");
+
+	&:hover {
+		background-image: url("../img/service4b.jpg");
+	}
 }
 
 .service-5 {
 	background-image: url("../img/service5.jpg");
+
+	&:hover {
+		background-image: url("../img/service5b.jpg");
+	}
 }
 
 .service-6 {
 	background-image: url("../img/service6.jpg");
+
+	&:hover {
+		background-image: url("../img/service6b.jpg");
+	}
 }
 
 .service-7 {
 	background-image: url("../img/service7.jpg");
+
+	&:hover {
+		background-image: url("../img/service7b.jpg");
+	}
 }
 
 .service-8 {
 	background-image: url("../img/service8.jpg");
+
+	&:hover {
+		background-image: url("../img/service8b.jpg");
+	}
 }
 
 .service-9 {
 	background-image: url("../img/service9.jpg");
+
+	&:hover {
+		background-image: url("../img/service9b.jpg");
+	}
 }
 
 .service-10 {
 	background-image: url("../img/service10.jpg");
+
+	&:hover {
+		background-image: url("../img/service10b.jpg");
+	}
 }
 
 .service-11 {
 	background-image: url("../img/service11.jpg");
+
+	&:hover {
+		background-image: url("../img/service11b.jpg");
+	}
 }
 
 .service-12 {
 	background-image: url("../img/service12.jpg");
+
+	&:hover {
+		background-image: url("../img/service12b.jpg");
+	}
 }
 
 .service-13 {
 	background-image: url("../img/service13.jpg");
+
+	&:hover {
+		background-image: url("../img/service13b.jpg");
+	}
 }

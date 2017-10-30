@@ -1,23 +1,49 @@
 footer {
 	//background-color: $color-base;
 	background-image: url("../img/footer-patter.jpg");
+
 	div {
-		padding: 10px 0 10px 0;
+		text-align: center;
 	}
+
 	p {
 		color: #fff;
 		display: inline;
 		font-size: 18px;
-		margin: 0 60px 0 0;
 	}
 }
 
+
 .footer-logo {
-	margin: 0 60px 0 0;
+	display: block;
+	margin: 0 auto;
+	padding: 10px 0 20px 0;
 	width: 160px;
+
+	@include query(768px) {
+		display: inline;
+		padding-right: 20px;	
+  	} 
 }
 
 .footer-icon {
+	display: none;
 	margin-right: 10px;
 	height: 30px;
+
+	@include query(414px) {
+		display: inline;	
+  	} 
+}
+
+.footer-phone,
+.footer-email {
+	text-align: center;
+	margin-bottom: 10px;
+
+	@include query(768px) {
+		display: inline;
+		padding-right: 20px;			
+		text-align: initial;
+  	} 
 }

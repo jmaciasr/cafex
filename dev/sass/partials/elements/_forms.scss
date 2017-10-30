@@ -18,7 +18,11 @@ textarea {
 	display: block;
 	font-size: 16px;
 	margin: 20px 0 20px 0;
+	width: 100%;
+
+	@include query(800px) {
 	width: 80%;
+	} 
 }
 
 label,
@@ -36,8 +40,17 @@ button {
 	font-family: $font-family-base;
 	padding: 20px;
 	transition: background-color 1s; 
-	width: 30%;
+	width: 100%;
+
 	&:hover {
 	background-color: $color-base;			
 	}
+
+	@include query(650px) {
+		width: 50%;
+	} 
+
+	@include query(1024px) {
+		width: 30%;
+	} 	
 }
