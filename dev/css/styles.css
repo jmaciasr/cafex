@@ -186,8 +186,6 @@ svg:not(:root) {
 
 img,
 figure {
-  width: inherit;
-  /*IE8*/
   max-width: 100%;
   height: auto;
 }
@@ -881,7 +879,7 @@ footer p {
 }
 
 .height-img_base {
-  height: 190px;
+  height: 179px;
 }
 
 .height-img_large {
@@ -889,14 +887,30 @@ footer p {
 }
 
 .wide-img_3-4 {
+  display: none;
+  margin-bottom: 10px;
   width: 74%;
 }
 
+@media only screen and (min-width: 1024px) {
+  .wide-img_3-4 {
+    display: initial;
+  }
+}
+
 .wide-img_1-4 {
-  width: 24%;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .wide-img_1-4 {
+    width: 24%;
+  }
 }
 
 .wide-img_2-4 {
+  margin-bottom: 10px;
   width: 49%;
 }
 

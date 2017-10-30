@@ -15,23 +15,36 @@
 }
 
 .height-img_base {
-	height: 190px;	
+	height: 179px;	
 }
 
 .height-img_large {
-	height: 100%;	
+	height: 100%;
 }
 
 .wide-img_3-4 {
+	display: none;
+	margin-bottom: 10px;
 	width: 74%;
+
+	@include query(1024px) {
+		display: initial;
+	}
 }
 
 .wide-img_1-4 {
-	width: 24%;
+	width: 100%;
+	margin-bottom: 10px;
+
+	@include query(1024px) {
+		width: 24%;
+	}	
 }
 
 .wide-img_2-4 {
+	margin-bottom: 10px;
 	width: 49%;
+	
 }
 
 .gallery {
