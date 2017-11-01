@@ -1,16 +1,20 @@
 .header-logo {
 	left: 50%;
 	position: absolute;
-	top: 15%;
+	top: 17%;
 	transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
 	width: 25%;
 	z-index: 9;
+	
+	@include query(1024px) {
+		top: 15%;
+	}
 }
 
 .header-slogan{
 	color: #fff;
-	font-size: 30px;
+	font-size: 20px;
 	font-family: $font-family-contrast;
 	left: 50%;
 	position: absolute;
@@ -20,4 +24,8 @@
     -webkit-transform: translate(-50%, -50%);
 	width: 40%;
 	z-index: 9;
+
+	@include query(1024px) {
+		font-size: 30px;
+	}
 }

@@ -1,41 +1,104 @@
-.menu {
-	font-family: $font-family-contrast;
-	padding: 10px 30px 20px 30px;
-	position: absolute;
-	right: 0;	
-	text-align: right;	
-	z-index: 9;
-	
-	a {
-		border: none;
-		color: #fff;
-		font-size: 25px;
-		margin-left: 30px;
-		transition: border .2s;
-		
-		&:hover {
-			border-bottom: 2px solid #fff;
-		}
+.headband-menu {
+	background-color: $color-base;
+	padding: 5px 0;
 
-		@include query(1500px) {
-			font-size: 190%;
-		}
+	@include query(1024px) {
+		display: none
+	}	
+}
+
+.icon-menu {
+	background-size: cover;
+	height: 30px;
+	margin-left: 85%;		
+	repeat: none;
+	width: 30px;
+	
+	@include query(768px) {
+		height: 40px;
+		width: 40px;
+	}
+	
+	@include query(1000px) {
+		height: 50px;
+		width: 50px;
+	}	
+}
+
+.icon-menu--hamburger {
+	background-image: url("../img/icon-menu.png");
+}
+
+.icon-menu--exit {
+	background-image: url("../img/icon-exit.png");
+}
+
+.menu {
+	background-color: $color-base;
+	font-family: $font-family-contrast;
+
+	a {
+		color: #fff;
+		display: block;
+		border-bottom: 1px solid #fff;
+		padding: 10px 10px 10px 0;	
+		text-align: center;
+	}
+
+	@include query(1024px) {
+		background-color: transparent;
+		padding: 10px 30px 20px 30px;
+		position: absolute;
+		right: 0;	
+		text-align: right;	
+		z-index: 9;
+		
+		a {
+			border: none;
+			display: inline;
+			font-size: 25px;
+			margin-left: 30px;
+			padding: 0;	
+			transition: border .2s;
+			
+			&:hover {
+				border-bottom: 3px solid #fff;
+			}
+
+			@include query(1500px) {
+				font-size: 190%;
+			}
+		}		
 	}
 }
 
 .language {
+	border-bottom: 1px solid #fff;
+	border-top: 1px solid #fff;	
 	display: block;
-	font-size: 18x;
-	padding-bottom: 10px;
+	font-size: 18px;
+	padding: 12px 0 10px 0;
 	font-family: $font-family-base;
-
+	padding-right: 10px;
+	text-align: center;
 	
 	a {
-		margin-left: 0;		
+		border: none;
+		display: inline;
+		padding: 0;
+		margin-left: 0;	
+
+
 		&:hover {
 			border-bottom: 1px solid #fff;
 		}
 
+	}
+
+	@include query(1024px) {
+		border: none;
+		display: inline;
+		padding-right: 0;
 	}
 }
 
